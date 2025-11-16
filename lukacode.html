@@ -79,7 +79,7 @@
 
 <!-- Slideshow Page -->
 <div id="slideshow" class="page active">
-    <h2 style="text-align:center;">Image Slideshow</h2>
+    <h2 style="text-align:center;">Luka That Could've Been / Official</h2>
 
     <div class="slideshow-container">
         <div class="slide"><img src="FIRST_LUKA.jpg"></div>
@@ -99,7 +99,7 @@
     <!-- Twitch Embed -->
     <div style="display:flex;justify-content:center;">
         <iframe
-            src="https://player.twitch.tv/?lukanctzen&parent=localhost"
+            src="https://player.twitch.tv/?channel=YOUR_TWITCH_NAME&parent=localhost"
             height="400" width="700" allowfullscreen>
         </iframe>
     </div>
@@ -125,7 +125,7 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
-// Countdown Timer to Nov 25, 2AM EST / 8AM Israel
+// Countdown Timer to Nov 25, 2AM EST / 8AM your timezone
 function updateCountdown() {
     const targetEST = new Date('2025-11-25T02:00:00-05:00');
     const now = new Date();
@@ -143,7 +143,7 @@ function updateCountdown() {
     const seconds = Math.floor((diff / 1000) % 60);
 
     document.getElementById('countdown').innerHTML =
-        `Countdown to Nov 25 — 2AM EST / 8AM Israel: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        `Countdown to Nov 25 — 2AM EST / 8AM your timezone: ${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
 setInterval(updateCountdown, 1000);
